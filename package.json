@@ -1,0 +1,38 @@
+{
+    "name": "ecommerce-site",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 3001",
+        "build": "next build",
+        "start": "next start -p 3001",
+        "lint": "next lint",
+        "tail": "npx tailwindcss -o ./src/styles/css/tail.css --minify --watch",
+        "sass": "sass --watch --no-source-map --style=compressed ./src/styles/sass/styles.scss:./src/styles/css/styles.css"
+    },
+    "dependencies": {
+        "@types/node": "20.2.1",
+        "@types/react": "18.2.6",
+        "@types/react-dom": "18.2.4",
+        "autoprefixer": "10.4.14",
+        "axios": "^1.4.0",
+        "date-fns": "^2.30.0",
+        "eslint": "8.40.0",
+        "eslint-config-next": "13.4.2",
+        "express": "^4.18.2",
+        "next": "13.4.2",
+        "postcss": "8.4.23",
+        "react": "18.2.0",
+        "react-18-image-lightbox": "^5.1.4",
+        "react-day-picker": "^8.7.1",
+        "react-dom": "18.2.0",
+        "react-popper": "^2.3.0",
+        "styled-components": "^6.0.0-rc.1",
+        "swiper": "^9.3.2",
+        "tailwindcss": "3.3.2",
+        "typescript": "5.0.4"
+    },
+    "devDependencies": {
+        "@types/styled-components": "^5.1.26"
+    }
+}

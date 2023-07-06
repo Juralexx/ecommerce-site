@@ -1,0 +1,54 @@
+.av-tag {
+    position      : relative;
+    display       : inline-flex;
+    align-items   : center;
+    background    : var(--bg-zero);
+    padding       : 5px 10px;
+    border-radius : var(--rounded-lg);
+    border        : 1px solid var(--border);
+    font-size     : 1rem;
+    white-space   : nowrap;
+
+    &.success {
+        color :  var(--emerald-500);
+        &.befored {
+            &:before {
+                background-color : var(--emerald-500);
+            }
+        }
+    }
+    &.danger {
+        color :  var(--red-500);
+        &.befored {
+            &:before {
+                background-color : var(--red-500);
+            }
+        }
+    }
+    &.bg-success {
+        background-color : var(--emerald-50);
+    }
+    &.bg-danger {
+        background-color : var(--red-50);
+    }
+
+    &.befored {
+        padding-left : 25px;
+    
+        &:before {
+            position         : absolute;
+            content          : '';
+            top              : 50%;
+            transform        : translateY(-50%);
+            left             : 10px;
+            width            : 7px;
+            height           : 7px;
+            border-radius    : var(--rounded-full);
+        }
+    }
+
+    svg {
+        width  : 14px;
+        height : 14px;
+    }
+}
